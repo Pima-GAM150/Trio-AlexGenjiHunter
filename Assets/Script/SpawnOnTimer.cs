@@ -10,8 +10,12 @@ public class SpawnOnTimer : MonoBehaviour {
     private float timer = 5.0f;//timer for respawn
     private float currentTime = 0f;//calculate time passing
 
+    public MarblePool marblePool;
+    public GameObject marbleBag;
+
     // Use this for initialization
     void Start () {
+        marblePool.pooledMarbles.Clear();
         nMarble();
 	}
 
@@ -24,7 +28,23 @@ public class SpawnOnTimer : MonoBehaviour {
         Quaternion rot = new Quaternion();
         rot = Quaternion.Euler(rng.Next(0,180), rng.Next(0, 180), rng.Next(0,180));
         //instantiate and add to list
-        GameObject nMarble = (GameObject)Instantiate(Marbles[style], pos, rot, transform);
+        GameObject nMarble;
+        bool allActive = true;
+
+        foreach (GameObject marble in marblePool.pooledMarbles) {
+            if (!marble.gameObject.activeInHierarchy && allActive) {
+                marble.SetActive(true);
+                marble.transform.position = pos;
+                marble.transform.rotation = rot;
+                allActive = false;
+            }
+        }
+        if (allActive)
+        {
+            nMarble = (GameObject)Instantiate(Marbles[style], pos, rot, transform);
+            marblePool.pooledMarbles.Add(nMarble);
+        }
+
         //change below to work with object pooling when created
         //VisibleMarbles.Add(nMarble);
     }

@@ -346,6 +346,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &640176048 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1721893458437660, guid: 11e04dfee52b76c47a72eaea5e129b90,
+    type: 2}
+  m_PrefabInternal: {fileID: 799124159}
+--- !u!114 &640176051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640176048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35408b8e13d6684aadf9703151088b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645079531
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +570,59 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd90b74f9e82aa74cb216237a8144ac0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1575024855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1575024857}
+  - component: {fileID: 1575024856}
+  m_Layer: 0
+  m_Name: MarbleBag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1575024856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575024855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94e8b595df08c448ba77d445d88cd2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Marbles:
+  - {fileID: 1525192917236732, guid: 6c78d36f55660c2459e2211ed9a1085c, type: 2}
+  - {fileID: 1024124548390444, guid: 7dffae56e3577fb4d8634e82a7e5f6fa, type: 2}
+  - {fileID: 1603438444555182, guid: 992c28501750d0142925e96798b25c65, type: 2}
+  - {fileID: 1022707779923844, guid: 765661eb0ddbf75478248cc6c4cd984d, type: 2}
+  spawnPoint: {fileID: 1734877448}
+  marblePool: {fileID: 11400000, guid: 64964b62c88182a40b7243b90cc8a908, type: 2}
+  marbleBag: {fileID: 1575024855}
+--- !u!4 &1575024857
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575024855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.74914, y: -2.1671214, z: 11.848642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1734877448 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1811164793928624, guid: d28353949d4c1a4409ade1d9cc5d2c81,
+    type: 2}
+  m_PrefabInternal: {fileID: 1890860925}
 --- !u!1001 &1890860925
 Prefab:
   m_ObjectHideFlags: 0

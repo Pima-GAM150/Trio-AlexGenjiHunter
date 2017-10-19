@@ -15,6 +15,8 @@ public class MarbleNet : MonoBehaviour {
 	}
 
     void OnTriggerEnter(Collider e) {
-        Destroy(e.gameObject);
+        //Destroy(e.gameObject);
+        //in preparation for OBJECT POOLING MOTHER FUCKERS
+        e.gameObject.SetActive(false);
     }
 }
