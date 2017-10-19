@@ -6,7 +6,6 @@ public class SpawnOnTimer : MonoBehaviour {
     public GameObject[] Marbles;//array of marbles to random from
     public GameObject spawnPoint;//empty called spawn point
     private System.Random rng = new System.Random();
-    //private List<GameObject> VisibleMarbles = new List<GameObject>();
     private float timer = 5.0f;//timer for respawn
     private float currentTime = 0f;//calculate time passing
 
@@ -44,9 +43,6 @@ public class SpawnOnTimer : MonoBehaviour {
             nMarble = (GameObject)Instantiate(Marbles[style], pos, rot, transform);
             marblePool.pooledMarbles.Add(nMarble);
         }
-
-        //change below to work with object pooling when created
-        //VisibleMarbles.Add(nMarble);
     }
 	
 	// Update is called once per frame
