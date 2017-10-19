@@ -21,20 +21,15 @@ public class ToggleableObject : MonoBehaviour, IClickable {
 	public void OnClicked( int clickedWithButton) {
         if (toggle) {
             toggle = false;
-            getPos(new Vector3(5, 0, 0));
+            pos += new Vector3(5, 0, 0);
         }
         else {
             toggle = true;
-            getPos(new Vector3(-5, 0, 0));
+            pos += (new Vector3(-5, 0, 0));
         }
     }
 
     public void moveTowards(Vector3 pos) {
         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, pos, Time.deltaTime);
-    }
-
-    public Vector3 getPos(Vector3 direction) {
-        pos = gameObject.transform.position + direction;
-        return pos;
     }
 }
