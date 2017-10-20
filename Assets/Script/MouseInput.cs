@@ -17,13 +17,14 @@ public class MouseInput : MonoBehaviour
                 if (clickedObj != null) clickedObj.OnClicked(0);
             }
 
-            //float scrollWheelInput = Input.GetAxis("Mouse ScrollWheel");
-            //if (Mathf.Abs(scrollWheelInput) > 0f)
-            //{
-            //    IScrollable scrolledObj = currentHit.collider.GetComponent<IScrollable>();
+            float scrollWheelInput = Input.GetAxis("Mouse ScrollWheel");
+            if (Mathf.Abs(scrollWheelInput) > 0f)
+            {
+                //Debug.Log(scrollWheelInput);
+                IScrollable scrolledObj = currentHit.collider.GetComponent<IScrollable>();
 
-            //    if (scrolledObj != null) scrolledObj.OnScrolled(scrollWheelInput);
-            //}
+                if (scrolledObj != null) scrolledObj.OnScrolled(scrollWheelInput);
+            }
         }
     }
 }
