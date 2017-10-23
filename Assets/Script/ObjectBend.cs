@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class ObjectBend : MonoBehaviour, IScrollable {
 
-    public HingeJoint HingeToBend;
-    private JointLimits joint;
-    public Transform pos;
+    public Transform hingeToBend;
+    public float initialAngle;
 
     public void Start() {
+        hingeToBend.transform.rotation = Quaternion.Euler(new Vector3(0, initialAngle));
+    }
+
+    public void Update() {
 
     }
 
     public void OnScrolled(float scrollAmount) {
-        //Debug.Log(scrollAmount);
-        //joint = HingeToBend.limits;
-        //if (joint.min <= 0 && joint.min >= -90) {
-        //    joint.min -= scrollAmount * 10;
-        //    joint.max -= scrollAmount * 10;
-        //}
-        //else {
-        //    joint.min = 0f;
-        //    joint.max = 0f;
-        //    HingeToBend.limits = joint;
-        //}
-        //HingeToBend.limits = joint;
+        if (scrollAmount != 0.0f) {
+            initialAngle += scrollAmount * 15;
+            if (initialAngle < -90) initialAngle = -90;
+            if (initialAngle > 90) initialAngle = 90;
+            hingeToBend.transform.rotation = Quaternion.Euler(new Vector3(0, initialAngle));
+            /*hingeAngles.min = pos;
+            hingeAngles.max = pos;
+            hingeToBend.limits = hingeAngles;
+            //hingeToBend.useLimits = true;*/
+        }
     }
     
 }
