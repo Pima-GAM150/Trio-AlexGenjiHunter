@@ -29,5 +29,6 @@ public class InputManager : MonoBehaviour {
         {
             cam.MoveVertical(false);
         }
+
     }
 }

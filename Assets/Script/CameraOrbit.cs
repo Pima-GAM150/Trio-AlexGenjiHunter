@@ -10,7 +10,7 @@ public class CameraOrbit : MonoBehaviour
     public float horizMove = 45f;
     public float vertMove = 15f;
 
-    public float updownAmount = 10f;
+    public int distanceUpDown = 10;
 
     public void MoveHorizontal(bool left)
     {
@@ -28,4 +28,18 @@ public class CameraOrbit : MonoBehaviour
         transform.RotateAround(target.position, transform.TransformDirection(Vector3.right) , vertMove * dir);
 
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            transform.Translate(-Vector3.up * distanceUpDown);
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            transform.Translate(Vector3.up * distanceUpDown);
+        }
+    }
+
+
 }
