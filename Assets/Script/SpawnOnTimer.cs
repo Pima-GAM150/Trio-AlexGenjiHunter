@@ -32,6 +32,7 @@ public class SpawnOnTimer : MonoBehaviour {
 
         foreach (GameObject marble in marblePool.pooledMarbles) {
             if (!marble.gameObject.activeInHierarchy && allActive) {
+                marble.GetComponent<Rigidbody>().velocity = new Vector3(0f,0f,0f);
                 marble.SetActive(true);
                 marble.transform.position = pos;
                 marble.transform.rotation = rot;
