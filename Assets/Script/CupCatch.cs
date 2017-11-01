@@ -15,6 +15,7 @@ public class CupCatch : MonoBehaviour {
 	}
 
     void OnTriggerEnter(Collider e) {
-        Destroy(e.gameObject);
+        //Destroy(e.gameObject);
+        e.gameObject.SetActive(false);
     }
 }
