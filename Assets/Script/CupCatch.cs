@@ -17,5 +17,7 @@ public class CupCatch : MonoBehaviour {
     void OnTriggerEnter(Collider e) {
         //Destroy(e.gameObject);
         e.gameObject.SetActive(false);
+
+        GetComponent<UIcontroller>().SetCurrentScore();
     }
 }
