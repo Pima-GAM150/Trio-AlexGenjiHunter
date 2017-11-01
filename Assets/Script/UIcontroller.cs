@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIcontroller : MonoBehaviour {
 
@@ -10,6 +11,10 @@ public class UIcontroller : MonoBehaviour {
 
     public int currentCount;
 
+    public int[] toLevelUp;
+
+    public string levelToLoad;
+
 	// Use this for initialization
 	void Start () {
         currentScore = currentCount;
@@ -17,6 +22,12 @@ public class UIcontroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if(currentScore >= toLevelUp[currentCount])
+        {
+            SceneManager.LoadScene(levelToLoad);
+        }
+
 
         ScoreText.text = "Score: " + currentScore;
             

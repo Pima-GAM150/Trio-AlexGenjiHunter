@@ -18,6 +18,6 @@ public class CupCatch : MonoBehaviour {
         //Destroy(e.gameObject);
         e.gameObject.SetActive(false);
 
-        GetComponent<UIcontroller>().SetCurrentScore();
+        FindObjectOfType<UIcontroller>().SetCurrentScore();
     }
 }

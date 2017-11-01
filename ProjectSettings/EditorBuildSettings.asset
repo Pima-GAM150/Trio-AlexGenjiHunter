@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/FlatStageSwitch.unity
     guid: f44021648af30154dab1ed734064f804
+  - enabled: 1
+    path: Assets/Scene/Alex's Playground.unity
+    guid: 45c05d09b2e48a748bd7bff8c20af214
+  - enabled: 1
+    path: Assets/Scene/Stage1.unity
+    guid: fdf98445782639c4d8715a6e8499da21
+  - enabled: 1
+    path: Assets/Scene/FlatStageRotate.unity
+    guid: 39c3677143fd7284283e82a35a1214fe
