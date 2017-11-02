@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/FlatStageRotate.unity
     guid: 39c3677143fd7284283e82a35a1214fe
+  - enabled: 1
+    path: Assets/Scene/FlatStageBridge.unity
+    guid: 986fb62b90e40c8429eb7eef8ed2b101
