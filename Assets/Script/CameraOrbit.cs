@@ -34,6 +34,7 @@ public class CameraOrbit : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             transform.Translate(-Vector3.up * distanceUpDown);
+            
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
