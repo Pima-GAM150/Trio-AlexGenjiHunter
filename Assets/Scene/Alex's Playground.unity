@@ -2474,10 +2474,6 @@ Prefab:
       propertyPath: m_Name
       value: Bridge (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4618153928728138, guid: 909ec22f30dcfb749b7e58bb149cbfb6, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 909ec22f30dcfb749b7e58bb149cbfb6, type: 2}
   m_IsPrefabParent: 0
@@ -3166,17 +3162,17 @@ Prefab:
     - target: {fileID: 224326695188558808, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 135.5
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 224326695188558808, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 114976966349056506, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: toLevelUp.Array.data[0]
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114976966349056506, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}

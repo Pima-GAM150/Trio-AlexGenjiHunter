@@ -358,17 +358,22 @@ Prefab:
     - target: {fileID: 224326695188558808, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 135.5
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 224326695188558808, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 114976966349056506, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: levelToLoad
       value: Title Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976966349056506, guid: f19bd0d1118b5d44d8c0a40debcd7927,
+        type: 2}
+      propertyPath: toLevelUp.Array.data[0]
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f19bd0d1118b5d44d8c0a40debcd7927, type: 2}
@@ -473,7 +478,6 @@ GameObject:
   - component: {fileID: 1088670002}
   - component: {fileID: 1088670001}
   - component: {fileID: 1088670000}
-  - component: {fileID: 1088670004}
   - component: {fileID: 1088670006}
   - component: {fileID: 1088670005}
   m_Layer: 0
@@ -545,17 +549,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1088670004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1088669999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ebfeb95d4076544bdda78a9ecdb259, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1088670005
 MonoBehaviour:
   m_ObjectHideFlags: 0

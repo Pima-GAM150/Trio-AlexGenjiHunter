@@ -319,7 +319,6 @@ GameObject:
   m_Component:
   - component: {fileID: 394642620}
   - component: {fileID: 394642619}
-  - component: {fileID: 394642618}
   - component: {fileID: 394642617}
   - component: {fileID: 394642616}
   - component: {fileID: 394642615}
@@ -365,13 +364,6 @@ AudioListener:
   m_GameObject: {fileID: 394642613}
   m_Enabled: 1
 --- !u!124 &394642617
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 394642613}
-  m_Enabled: 1
---- !u!92 &394642618
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -592,17 +584,17 @@ Prefab:
     - target: {fileID: 224326695188558808, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 135.5
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 224326695188558808, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 114976966349056506, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
       propertyPath: toLevelUp.Array.data[0]
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114976966349056506, guid: f19bd0d1118b5d44d8c0a40debcd7927,
         type: 2}
