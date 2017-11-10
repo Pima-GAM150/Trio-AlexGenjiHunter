@@ -2058,9 +2058,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use the WASD keys to control camera and the mouse to control different "<color=orange>Triggers</color>"
-    that will help move along and pass each stage by getting the marbles into the
-    "<color=green>Cups</color>".
+  m_Text: Use the WS keys to control camera up, down and the mouse to control different
+    "<color=orange>Triggers</color>" that will help move along and pass each stage
+    by getting the marbles into the "<color=green>Cups</color>".
 --- !u!222 &1530240577
 CanvasRenderer:
   m_ObjectHideFlags: 0
